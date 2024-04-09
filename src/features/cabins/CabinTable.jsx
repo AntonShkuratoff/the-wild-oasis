@@ -28,11 +28,11 @@ const TableHeader = styled.header`
 `;
 
 export default function CabinTable() {
-  const { isLoading, cabins } = useCabins();
+  // const { isLoading, cabins } = useCabins();
 
-  if (isLoading) {
-    return <Spinner />;
-  }
+  // if (isLoading) {
+  //   return <Spinner />;
+  // }
 
   return (
     <Table role="table">
@@ -44,9 +44,9 @@ export default function CabinTable() {
         <div>Discount</div>
         <div></div>
       </TableHeader>
-      {cabins.map((cabin) => (
+      {/* {cabins.map((cabin) => (
         <CabinRow cabin={cabin} key={cabin.id} />
-      ))}
+      ))} */}
     </Table>
   );
 }
